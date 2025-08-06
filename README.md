@@ -126,6 +126,3 @@ if __name__ == "__main__":
     except Exception as e:
         logger.exception(f"Критическая ошибка при запуске: {e}")
 ```
-        logger.warning("Парсер остановлен пользователем.")
-    except Exception as e:
-        logger.exception(f"Критическая ошибка при запуске: {e}")
