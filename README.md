@@ -1,8 +1,8 @@
-# Telegram-channel-parser
+# Telegram-channel-parser.
 A telegram channel parser that collects data about the post text, publication date, number of reactions, and number of views.
 
 ## Этап 1. Подготовка к работе, импорт библиотек.
-### импорт библиотек
+### Импорт библиотек.
 ```python
 from telethon.sync import TelegramClient
 from telethon import events, types
@@ -12,18 +12,18 @@ import nest_asyncio
 import logging
 ```
 
-### настройка логирования. Для последующего вывода информации об ошибках
+### Настройка логирования. Для последующего вывода информации об ошибках.
 ```python
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 ```
 
-### запуск асинхронной работы программы
+### Запуск асинхронной работы программы.
 ```python
 nest_asyncio.apply()
 ```
 
-### запись переменных для работы
+### Запись переменных для работы.
 ```python
 api_id = ''
 api_hash = ''
@@ -31,7 +31,7 @@ channel_username = ''
 phone = ''
 ```
 
-### создание телеграм клиента для получения данных о канале
+### Создание телеграм клиента для получения данных о канале.
 ```python
 client = TelegramClient(phone, api_id, api_hash)
 ```
